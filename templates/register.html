@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Register - Pure Health Water Delivery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet" />
+    <style>
+        /* Background & layout */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #6dd5fa, #2980b9);
+            color: #333;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            min-height: 500px;
+        }
+        /* Left side - info panel */
+        .info-panel {
+            flex: 1 1 400px;
+            background: #0d6efd;
+            color: white;
+            padding: 40px 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
+        .info-panel h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 3rem;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+        }
+        .info-panel p.welcome {
+            font-size: 1.25rem;
+            line-height: 1.5;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            margin-bottom: 25px;
+            text-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+        .info-panel .contact-section {
+            font-size: 1rem;
+        }
+        .info-panel .contact-section h3 {
+            margin-bottom: 10px;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 5px;
+        }
+        .info-panel .contact-item {
+            margin-bottom: 8px;
+        }
+        /* Right side - register form */
+        .register-panel {
+            flex: 1 1 400px;
+            background: #f8f9fa;
+            padding: 50px 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+        }
+        .register-panel h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            margin-bottom: 0;
+            color: #0d6efd;
+            text-align: center;
+            width: 100%;
+        }
+        form {
+            width: 100%;
+            max-width: 380px;
+        }
+        form label {
+            font-weight: 600;
+            color: #444;
+            display: block;
+            margin-bottom: 6px;
+            font-size: 1rem;
+        }
+        form input {
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            padding: 12px 15px;
+            border: 1.5px solid #ced4da;
+            transition: border-color 0.3s ease;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+        form input:focus {
+            border-color: #0d6efd;
+            outline: none;
+            box-shadow: 0 0 8px rgba(13,110,253,0.4);
+        }
+        button[type="submit"] {
+            width: 100%;
+            background-color: #0d6efd;
+            color: white;
+            padding: 14px 0;
+            font-weight: 700;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            box-shadow: 0 6px 15px rgba(13,110,253,0.5);
+            transition: background-color 0.3s ease;
+        }
+        button[type="submit"]:hover {
+            background-color: #0b5ed7;
+        }
+        .login-link {
+            margin-top: 10px;
+            text-align: center;
+            font-weight: 600;
+            color: #0d6efd;
+            text-decoration: none;
+            display: block;
+            transition: color 0.3s ease;
+        }
+        .login-link:hover {
+            color: #0b5ed7;
+            text-decoration: underline;
+        }
+        /* Responsive */
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+                margin: 20px;
+            }
+            .info-panel, .register-panel {
+                flex: unset;
+                padding: 30px 20px;
+                min-height: auto;
+            }
+            .info-panel h1 {
+                font-size: 2.5rem;
+            }
+            .register-panel h2 {
+                font-size: 2rem;
+            }
+            form {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Info Panel -->
+        <section class="info-panel">
+            <h1>Welcome to Pure Health Mineral Water Delivery</h1>
+            <p class="welcome">
+                We are delighted to have you here! Register now to enjoy fresh, pure mineral water delivered straight to your doorstep.
+                Join our community and stay healthy with every sip.
+            </p>
+
+            <div class="contact-section">
+                <h3>Contact Our CEO</h3>
+                <div class="contact-item"><strong>Name:</strong> AFTAB HUSSAIN</div>
+                <div class="contact-item"><strong>Email:</strong> aftabhussain123@gmail.com</div>
+                <div class="contact-item"><strong>Phone:</strong> +92 310 2809969</div>
+            </div>
+
+            <div class="contact-section mt-4">
+                <h3>Company Info</h3>
+                <p>
+                    Pure Health Water Delivery is committed to providing the highest quality mineral water in Karachi. Our
+                    eco-friendly bottles and reliable delivery system ensure customer satisfaction every time.
+                </p>
+            </div>
+        </section>
+
+        <!-- Register Panel -->
+        <section class="register-panel">
+            <h2>Create Your Account</h2>
+            <form method="POST" novalidate>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Create a password" required>
+
+                <button type="submit">Register</button>
+            </form>
+
+            <a href="/customer/login" class="login-link">Already have an account? Log in here</a>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
